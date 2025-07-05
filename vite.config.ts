@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
-import path from 'path';
+import * as path from 'path';
 import { fileURLToPath } from 'url';
 
 // Needed for __dirname with ES modules
@@ -28,6 +28,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      '@app': path.resolve(__dirname, 'src/app'),
       '@pages': path.resolve(__dirname, 'src/pages'),
       '@constants': path.resolve(__dirname, 'src/constants'),
       '@hooks': path.resolve(__dirname, 'src/hooks'),
@@ -39,6 +40,8 @@ export default defineConfig({
       '@styles': path.resolve(__dirname, 'src/styles'),
       '@components': path.resolve(__dirname, 'src/components'),
       '@widgets': path.resolve(__dirname, 'src/widgets'),
+      '@features': path.resolve(__dirname, 'src/features'),
+      '@fonts': path.resolve(__dirname, 'src/fonts'),
     },
   },
   server: {
