@@ -1,10 +1,39 @@
-const LINKS = [
-  { path: '/', mobile: 'Home', desktop: 'Dashboard', icon: 'home' },
-  { path: '/trade', desktop: 'Trade', icon: 'trade' },
-  { path: '/actions', desktop: 'Actions', icon: 'actions' },
-  { path: '/wallet', desktop: 'Wallet', icon: 'wallet' },
-  { path: '/nft', desktop: 'NFT', icon: 'nft' },
-  { path: '/collections', mobile: 'Explore', desktop: 'Collections', icon: 'collections' },
-];
 
-export default LINKS;
+export default [
+  {
+    icon: 'dashboard',
+    path: '/',
+    desktop: 'Dashboard',
+    mobile: 'Dashboard'
+  },
+  {
+    icon: 'trade',
+    path: '/trade',
+    desktop: 'Trade',
+    mobile: 'Trade'
+  },
+  {
+    icon: 'actions',
+    path: '/actions',
+    desktop: 'Actions',
+    mobile: 'Actions'
+  },
+  {
+    icon: 'wallet',
+    path: '/wallet',
+    desktop: 'Wallet',
+    mobile: 'Wallet'
+  },
+  {
+    icon: 'nft',
+    path: '/nft',
+    desktop: 'NFT',
+    mobile: 'NFT'
+  },
+  {
+    icon: 'collections',
+    path: '/collections',
+    desktop: 'Collections',
+    mobile: 'Collections'
+  }
+];
