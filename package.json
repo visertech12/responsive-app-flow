@@ -17,6 +17,7 @@
     "@react-spring/web": "^10.0.1",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.13",
+    "prettier": "^3.6.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-ga4": "^2.1.0",
@@ -33,7 +34,8 @@
     "react-use-measure": "^2.1.7",
     "recharts": "^3.0.2",
     "styled-components": "^6.1.19",
-    "styled-theming": "^2.2.0"
+    "styled-theming": "^2.2.0",
+    "svgo": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
