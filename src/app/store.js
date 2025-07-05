@@ -1,6 +1,6 @@
 
 import { configureStore } from '@reduxjs/toolkit';
-import cryptoReducer from '../features/crypto/cryptoSlice.js';
+import cryptoReducer from '@features/crypto/cryptoSlice';
 
 export default configureStore({
     reducer: {

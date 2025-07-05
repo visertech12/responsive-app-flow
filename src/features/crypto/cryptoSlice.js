@@ -1,26 +1,52 @@
 
-import { createSlice } from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit';
+
+import {CRYPTO_CURRENCIES} from '@constants/currencies';
 
 const initialState = {
-    value: 0,
-};
+    data: CRYPTO_CURRENCIES,
+    sortDirection: ''
+}
 
 export const cryptoSlice = createSlice({
     name: 'crypto',
     initialState,
     reducers: {
-        increment: (state) => {
-            state.value += 1;
+        toggleFavorite: (state, action) => {
+            const {payload} = action;
+            const {data} = state;
+            const cryptoCurrency = data.find((item) => item.value === payload.value);
+            if (cryptoCurrency) {
+                cryptoCurrency.isFavorite = !cryptoCurrency.isFavorite;
+            }
         },
-        decrement: (state) => {
-            state.value -= 1;
-        },
-        incrementByAmount: (state, action) => {
-            state.value += action.payload;
-        },
-    },
+        handleSort: (state, action) => {
+            const {payload} = action;
+            const {data, sortDirection} = state;
+            const {type, variant} = payload;
+            const array = variant === 'short' ? data.slice(0, 5) : data;
+            const field = () => {
+                switch (type) {
+                    case 'change':
+                        return 'change';
+                    case 'price':
+                        return 'usd';
+                    default:
+                        return 'name';
+                }
+            }
+
+            if (sortDirection === 'asc') {
+                array.sort((a, b) => a[field()] > b[field()] ? 1 : -1);
+                state.sortDirection = 'desc';
+            } else {
+                array.sort((a, b) => a[field()] < b[field()] ? 1 : -1);
+                state.sortDirection = 'asc';
+            }
+        }
+    }
 });
 
-export const { increment, decrement, incrementByAmount } = cryptoSlice.actions;
+export const {toggleFavorite, handleSort} = cryptoSlice.actions;
 
 export default cryptoSlice.reducer;
