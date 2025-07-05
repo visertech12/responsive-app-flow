@@ -1,0 +1,41 @@
+var _rect, _path, _path2, _path3;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgUsdt(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 25,
+    height: 23,
+    viewBox: "0 0 25 23",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _rect || (_rect = /*#__PURE__*/React.createElement("rect", {
+    x: 3,
+    width: 18,
+    height: 6,
+    fill: "#26A69A"
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M0 13C0 9.84229 7.85729 9 12.5 9C17.1427 9 25 9.84229 25 13C25 16.1577 17.1427 17 12.5 17C7.85729 17 0 16.1577 0 13ZM2.08333 12.4286C2.08333 13.6914 6.74687 14.7143 12.5 14.7143C18.2531 14.7143 22.9167 13.6914 22.9167 12.4286C22.9167 11.1657 18.2531 10.1429 12.5 10.1429C6.74687 10.1429 2.08333 11.1657 2.08333 12.4286Z",
+    fill: "#26A69A"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M12 12C13.095 12 14.093 11.963 15 11.902V1H9V11.902C9.907 11.963 10.905 12 12 12Z",
+    fill: "#26A69A"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M13.723 14.0535C13.612 14.0571 13.5 14.0598 13.387 14.0624C12.932 14.074 12.472 14.082 12 14.082C11.528 14.082 11.068 14.074 10.613 14.0633C10.5 14.0606 10.388 14.058 10.277 14.0544C9.842 14.041 9.414 14.0241 9 14.0009V23H15V14C14.586 14.0232 14.158 14.0401 13.723 14.0535Z",
+    fill: "#26A69A"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgUsdt);
+export default __webpack_public_path__ + "static/media/usdt.6f0a2717ef704713537cc11af7365860.svg";
+export { ForwardRef as ReactComponent };

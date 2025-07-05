@@ -1,0 +1,46 @@
+var _path, _path2, _path3, _path4;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgIconFont(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    fill: "none",
+    viewBox: "0 0 16.009 16",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "m5 6.3342v-0.83415c0-0.27615 0.22386-0.5 0.5-0.5h5c0.2761 0 0.5 0.22385 0.5 0.5v0.83415",
+    stroke: "currentColor",
+    strokeLinecap: "round",
+    strokeMiterlimit: 10,
+    strokeWidth: 1.1
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "m8 5v7",
+    stroke: "currentColor",
+    strokeMiterlimit: 10,
+    strokeWidth: 1.1
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "m6.8391 11.678h2.3216",
+    stroke: "currentColor",
+    strokeLinecap: "round",
+    strokeLinejoin: "round",
+    strokeMiterlimit: 10,
+    strokeWidth: 1.1
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "m5.9186 15.729c0.66912 0.1802 1.3635 0.2713 2.064 0.2713 1.7869 0 3.538-0.5961 4.9304-1.6788 1.9387-1.507 3.0962-3.8712 3.0962-6.3241 0-3.0062-1.7382-5.8182-4.4286-7.1641-1.0894-0.54472-2.3202-0.83293-3.5596-0.83293-1.7903 0-3.5402 0.59429-4.9277 1.673-2.4003 1.8657-3.5488 4.9942-2.9265 7.9703 0.61061 2.9213 2.8683 5.3099 5.7517 6.0855zm-2.0689-13.083c1.1723-0.91176 2.654-1.4137 4.1718-1.4137 1.0491 0 2.0892 0.24326 3.0087 0.70299 2.2768 1.139 3.7477 3.5186 3.7477 6.0624 0 2.0757-0.9795 4.0763-2.6204 5.3517-1.1778 0.9154-2.6602 1.4195-4.1745 1.4195h-3.1e-4c-0.59214 0-1.179-0.0773-1.7438-0.2291-2.4394-0.6562-4.3494-2.6771-4.8661-5.1482-0.52686-2.5188 0.44556-5.1666 2.4769-6.7457z",
+    clipRule: "evenodd",
+    fill: "currentColor",
+    fillRule: "evenodd"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgIconFont);
+export default __webpack_public_path__ + "static/media/icon-font.207460c59936b6e2131a680ccf296bd7.svg";
+export { ForwardRef as ReactComponent };

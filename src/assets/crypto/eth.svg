@@ -1,0 +1,43 @@
+var _path, _path2, _path3, _path4, _path5, _path6;
+var _excluded = ["title", "titleId"];
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+import * as React from "react";
+function SvgEth(_ref, svgRef) {
+  var title = _ref.title,
+    titleId = _ref.titleId,
+    props = _objectWithoutProperties(_ref, _excluded);
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    width: 16,
+    height: 26,
+    viewBox: "0 0 16 26",
+    fill: "none",
+    xmlns: "http://www.w3.org/2000/svg",
+    ref: svgRef,
+    "aria-labelledby": titleId
+  }, props), title ? /*#__PURE__*/React.createElement("title", {
+    id: titleId
+  }, title) : null, _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M8 0.125C8 0.125 8 -0.125 8 0.125C8 0.375 8 0.685892 8 0.685892V16.9602L8.17111 17.125L16 12.75L8 0.125Z",
+    fill: "#343434"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M8 0.125L0 12.75L8 17.125V9.22589V0.125Z",
+    fill: "#8C8C8C"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    d: "M8.09728 18.7367L8 18.854V24.8443V25.125L16 14.125L8.09728 18.7367Z",
+    fill: "#3C3C3B"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    d: "M8 25.125V18.7367L0 14.125L8 25.125Z",
+    fill: "#8C8C8C"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    d: "M8 17.125L16 12.75L8 9.125V17.125Z",
+    fill: "#141414"
+  })), _path6 || (_path6 = /*#__PURE__*/React.createElement("path", {
+    d: "M0 12.75L8 17.125V9.125L0 12.75Z",
+    fill: "#393939"
+  })));
+}
+var ForwardRef = /*#__PURE__*/React.forwardRef(SvgEth);
+export default __webpack_public_path__ + "static/media/eth.eff505c58201f1f25718f1ef047c8a67.svg";
+export { ForwardRef as ReactComponent };
