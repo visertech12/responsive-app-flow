@@ -1,13 +1,23 @@
+
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": "src",
+    "target": "ES2020",
+    "lib": ["ES2015", "ES2016", "ES2017", "ES2018", "ES2019", "ES2020", "DOM", "DOM.Iterable"],
+    "baseUrl": ".",
     "paths": {
       "@pages/*": ["pages/*"],
       "@contexts/*": ["contexts/*"],
       "@styles/*": ["styles/*"],
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@constants/*": ["constants/*"],
+      "@hooks/*": ["hooks/*"],
+      "@ui/*": ["ui/*"],
+      "@db/*": ["db/*"],
+      "@utils/*": ["utils/*"],
+      "@assets/*": ["assets/*"],
+      "@widgets/*": ["widgets/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src/**/*", "../vite.config.ts"]
 }
