@@ -1,13 +1,14 @@
-import {ReactComponent as DepositIcon} from '@assets/icons/deposit.svg';
-import {ReactComponent as CryptoIcon} from '@assets/icons/crypto.svg';
-import {ReactComponent as WithdrawIcon} from '@assets/icons/withdraw.svg';
-import {ReactComponent as ExchangeIcon} from '@assets/icons/exchange.svg';
-import {ReactComponent as StakingIcon} from '@assets/icons/staking.svg';
-import {ReactComponent as NFTIcon} from '@assets/icons/nft.svg';
-import {ReactComponent as AMLIcon} from '@assets/icons/aml.svg';
-import {ReactComponent as CupIcon} from '@assets/icons/cup.svg';
-import {ReactComponent as InviteIcon} from '@assets/icons/invite.svg';
-import {ReactComponent as SupportIcon} from '@assets/icons/support.svg';
+
+import DepositIcon from '@assets/icons/deposit.svg?react';
+import CryptoIcon from '@assets/icons/crypto.svg?react';
+import WithdrawIcon from '@assets/icons/withdraw.svg?react';
+import ExchangeIcon from '@assets/icons/exchange.svg?react';
+import StakingIcon from '@assets/icons/staking.svg?react';
+import NFTIcon from '@assets/icons/nft.svg?react';
+import AMLIcon from '@assets/icons/aml.svg?react';
+import CupIcon from '@assets/icons/cup.svg?react';
+import InviteIcon from '@assets/icons/invite.svg?react';
+import SupportIcon from '@assets/icons/support.svg?react';
 
 const ACTIONS = [
     {
